@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ARAMEX Tracking</title>
+<title>GLOBAL DIPLOMATIC IMMUNITY COURIER Tracking</title>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
@@ -125,7 +125,7 @@ button{
 <body>
 <div class="container">
 
-  <div class="logo">ARAMEX</div>
+  <div class="logo">GDIC</div>
 
   <div class="card">
     <h3>Track Your Shipment</h3>
@@ -146,7 +146,7 @@ button{
     </div>
 
     <div class="footer">
-      Aramex / Tracking Interface – official ARAMEX system
+      GDIC / Tracking Interface – official GDIC system
     </div>
   </div>
 
@@ -155,19 +155,19 @@ button{
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script>
-const TRACK_CODE = "XX-UK-92502";
+const TRACK_CODE = "CL-2026-02";
 
 const DETAILS = [
-  "<b>Status:</b> <span class='blink'>ON HOLD</span>",
+  "<b>Status:</b> <span class='blink'>IN TRANSIT</span>",
   "<b>Origin:</b> Sana'a, Yemen",
-  "<b>Current Location:</b> South Africa",
-  "<b>Senders Name:</b> Ariana zayn lemus",
-  "<b>Final Destination:</b> Maun, Botswana",
+  "<b>Current Location:</b> ON ROUTE",
+  "<b>Senders Name:</b> Bien M slander",
+  "<b>Final Destination:</b> Mathudubukwane, Botswana",
   "<b>Quantity:</b> 1",
   "<b>Weight:</b> 14.2 kg",
   "<hr>",
-  "<b>Receiver Name:</b> Keteng Sakoi",
-  "<b>Receiver Address:</b> Maun, Botswana",
+  "<b>Receiver Name:</b> Japheth Rwothomio",
+  "<b>Receiver Address:</b> Mathudubukwane, Botswana",
   "<b>Receiver Phone:</b> +267 77813934"
 ];
 
@@ -227,7 +227,7 @@ function initMap(){
   // 📍 Correct route points
   const yemen = [15.3694, 44.1910];          // Sana'a, Yemen
   const southAfrica = [-26.2041, 28.0473];  // Johannesburg, South Africa
-  const botswana = [-19.9833, 23.4167];     // Maun, Botswana
+  const botswana = [-24.6000, 25.8667];     // Mathudubukwane, Botswana
 
   L.marker(yemen).addTo(map).bindPopup("Origin: Yemen");
   L.marker(southAfrica).addTo(map).bindPopup("Transit Hub: South Africa");
