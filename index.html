@@ -155,21 +155,20 @@ button{
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script>
-const TRACK_CODE = "CL-2026-02";
+const TRACK_CODE = "CL-2026-022";
 
 const DETAILS = [
-  "<b>Status:</b> <span class='blink'>ON HOLD</span>",
+  "<b>Status:</b> <span class='blink'>IN TRANSIT</span>",
   "<b>Origin:</b> Sana'a, Yemen",
-  "<b>Current Location:</b> South Africa",
+  "<b>Current Location:</b> on routes",
   "<b>Senders Name:</b> Bien M slander",
-  "<b>Final Destination:</b> Mathudubukwane, Botswana",
+  "<b>Final Destination:</b> MAUN, Botswana",
   "<b>Quantity:</b> 1",
-  "<b>Clearance fee:</b>Not yet cleard",
   "<b>Weight:</b> 14.2 kg",
   "<hr>",
-  "<b>Receiver Name:</b> Japheth Rwothomio",
-  "<b>Receiver Address:</b> Mathudubukwane, Botswana",
-  "<b>Receiver Phone:</b> +267 77813934"
+  "<b>Receiver Name:</b> EXPLORING BOTSWANA TOURS & SAFARI",
+  "<b>Receiver Address:</b> P.O BOX 2239 MAUN, BOTSWANA",
+  "<b>Receiver Phone:</b> +267 3059966 /+26774444258"
 ];
 
 let mapInitialized = false;
@@ -228,7 +227,7 @@ function initMap(){
   // 📍 Correct route points
   const yemen = [15.3694, 44.1910];          // Sana'a, Yemen
   const southAfrica = [-26.2041, 28.0473];  // Johannesburg, South Africa
-  const botswana = [-24.6000, 25.8667];     // Mathudubukwane, Botswana
+  const botswana = [-24.6000, 25.8667];     // Maun, Botswana
 
   L.marker(yemen).addTo(map).bindPopup("Origin: Yemen");
   L.marker(southAfrica).addTo(map).bindPopup("Transit Hub: South Africa");
