@@ -227,11 +227,11 @@ function initMap(){
   // 📍 Correct route points
   const yemen = [15.3694, 44.1910];          // Sana'a, Yemen
   const southAfrica = [-26.2041, 28.0473];  // Johannesburg, South Africa
-  const botswana = [-19.9833, 23.4167];     // Maun, Botswana
+  const botswana = [-24.6282, 25.9231];     // Gaborone, Botswana
 
   L.marker(yemen).addTo(map).bindPopup("Origin: Yemen");
   L.marker(southAfrica).addTo(map).bindPopup("Transit Hub: South Africa");
-  L.marker(botswana).addTo(map).bindPopup("Final Destination: Maun, Botswana");
+  L.marker(botswana).addTo(map).bindPopup("Final Destination: palapye, Botswana");
 
   const route = L.polyline(
     [yemen, southAfrica, botswana],
